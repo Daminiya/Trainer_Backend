@@ -20,6 +20,7 @@ public class RecordOfEmployment implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer id;
 	private Date fromYear;
 	private Date toYear;
 	private String period;
@@ -29,6 +30,12 @@ public class RecordOfEmployment implements Serializable{
 	private String typeOfWork;
 
 
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public Date getFromYear() {
 		return fromYear;
 	}

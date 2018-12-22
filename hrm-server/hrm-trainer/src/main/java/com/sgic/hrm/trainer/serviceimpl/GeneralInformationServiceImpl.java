@@ -3,12 +3,13 @@ package com.sgic.hrm.trainer.serviceimpl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.sgic.hrm.commons.entity.trainer.GeneralInformation;
 import com.sgic.hrm.commons.trainer.repository.GeneralInformationRepository;
 import com.sgic.hrm.trainer.service.GeneralInformationService;
 
-
+@Service
 public class GeneralInformationServiceImpl implements GeneralInformationService{
 	@Autowired
 	GeneralInformationRepository generalInformationRepository;
