@@ -11,6 +11,7 @@ public class TechnologySkillLevelDTOMapper {
 	public static TechnologySkillLevel mapToTechnologySkillLevel(TechnologySkillLevelDTO technologySkillLevelDTO) {
 		TechnologySkillLevel technologySkillLevel = new TechnologySkillLevel();
 		if (technologySkillLevelDTO != null) {
+			technologySkillLevel.setId(technologySkillLevelDTO.getId());
 			technologySkillLevel.setTechnology(technologySkillLevelDTO.getTechnology());
 			technologySkillLevel.setSkill(technologySkillLevelDTO.getSkill());
 			technologySkillLevel.setLevel(technologySkillLevelDTO.getLevel());
