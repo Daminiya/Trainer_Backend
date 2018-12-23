@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EntityScan(basePackages= {"com.sgic.hrm.commons.entity"})
-@EnableJpaRepositories(basePackages= {"com.sgic.hrm.commons.repository"})
+@EnableJpaRepositories(basePackages= {"com.sgic.hrm.commons.trainer.repository"})
 public class HrmTrainerApplication {
 
 	public static void main(String[] args) {
