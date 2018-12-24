@@ -1,15 +1,13 @@
 package com.sgic.hrm.commons.trainer.dto;
 
 import java.sql.Date;
-import java.sql.Time;
-
 public class AvailabilityData {
 	
 	private Integer id;
 	private String trainerName;
 	private Date startDate;
 	private Date endDate;
-	private Time time;
+	private String time;
 	private String scheduledTopic;
 	private String status;
 	public Integer getId() {
@@ -38,10 +36,11 @@ public class AvailabilityData {
 	}
 	
 	
-	public Time getTime() {
+	
+	public String getTime() {
 		return time;
 	}
-	public void setTime(Time time) {
+	public void setTime(String time) {
 		this.time = time;
 	}
 	public String getScheduledTopic() {

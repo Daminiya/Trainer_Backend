@@ -2,7 +2,7 @@ package com.sgic.hrm.commons.entity.trainer;
 
 import java.io.Serializable;
 import java.sql.Date;
-import java.sql.Time;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,7 +22,7 @@ public class Availability implements Serializable {
 	private String trainerName;
 	private Date startDate;
 	private Date endDate;
-	private Time time;
+	private String time;
 	private String scheduledTopic;
 	private String status;
 	public Integer getId() {
@@ -50,12 +50,10 @@ public class Availability implements Serializable {
 		this.endDate = endDate;
 	}
 	
-	
-	
-	public Time getTime() {
+	public String getTime() {
 		return time;
 	}
-	public void setTime(Time time) {
+	public void setTime(String time) {
 		this.time = time;
 	}
 	public String getScheduledTopic() {
